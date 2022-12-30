@@ -1,0 +1,15 @@
+import numpy as np
+A=np.array([[0,1,1,0,1,1,0],[1,1,1,1,1,1,1],[1,1,1,1,1,1,1],[0,1,1,1,1,1,0],[0,0,1,1,1,0,0],[0,0,0,1,0,0,0]]);
+u,s,vh=np.linalg.svd(A,full_matrices=True)
+print(u.shape)
+print(u)
+print('-----------')
+print(s.shape)
+print(s)
+print('-----------')
+print(vh.shape)
+print(vh)
+print('-----------')
+v=np.transpose(vh)
+print(v)
+print(v[:,3:4])
